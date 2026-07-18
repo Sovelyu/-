@@ -50,7 +50,7 @@ def longest_increasing_streak(nums: list[int]) -> dict:
         return {"length": 0, "streak": []}
 
     return {
-        "length" : total_lenght, # Исправлена опечатка в ключе
+        "length" : total_lenght,
         "streak": nums[final_index:final_index+total_lenght],
     }
 
