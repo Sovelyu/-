@@ -25,7 +25,7 @@ def process_grades(records: list[str]) -> dict:
         valid_count += 1
         average += score
         if score >= 60:
-            passed.add(name)  # Добавляем в множество
+            passed.add(name)
 
     average = round(average / valid_count, 1) if valid_count > 0 else 0.0
 
